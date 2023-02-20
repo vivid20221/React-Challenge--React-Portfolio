@@ -3,7 +3,7 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubsitle from '../../assets/images/logo_sub.png'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faLinkedin, faGithub} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -25,6 +25,28 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
                     <FontAwesomeIcon icon={faEnvelope} color= "#4d4d4e" />
                 </NavLink>
             </nav>
+            <ul>
+                <li>
+                    <a 
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.linkedin.com/in/julian-jauregui-36a030249/"
+                    >
+                        <FontAwesomeIcon icon={faLinkedin} color= '#4d4d4e' />
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a 
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.linkedin.com/in/julian-jauregui-36a030249/"
+                    >
+                        <FontAwesomeIcon icon={faGithub} color= '#4d4d4e' />
+                    </a>
+                </li>
+            </ul>
     </div>
 )
 export default Sidebar 

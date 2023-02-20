@@ -4,12 +4,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 3;
+    z-index: 5;
     min-height: 500px;
 
     .logo {
         display: block;
-        padding: 8px 0;    
+        padding: 7px 0;    
     img {
         display: block;
         margin: 8px auto;
@@ -22,10 +22,10 @@
         }
     }
 
-    }
+ }
 
     nav {
-        display: block;
+        display: contents;
         text-align: center;
         position: absolute;
         height: 210px;
@@ -49,17 +49,19 @@
             }
 
             &:hover {
-                color: #ffd700;
+                color: #55caf4;
             
             svg {
                 opacity: 0;
 
 
 
+
+
                 &:after {
                     opacity: 1;
                 }
-            }
+             }
 
             &:after {
                 content: '';
@@ -74,18 +76,38 @@
                 transition: all 0.3s ease-out;
 
 
-            }
+             }
 
-            &:first-child {
+             &:first-child {
                 &::after {
                     content: 'HOME';
                 }
-            }
+             }
             
             }
         }
 
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+
+             }
+
+        }
+
+    
+    a.contact-link {
+        &:after {
+            content: 'CONTACT';
+         }
     }
+
+    a.active {
+        svg {
+            color: rgb(0, 136, 255);
+         }
+    }
+  }
 
 
 }

@@ -1,19 +1,22 @@
-import React from "react";
-import Header from "./components/Header";
-import Section from "./components/AboutMe";
-import Navbar from "./components/Navbar";
+// import logo from './logo.svg'
+import './App.scss'
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 
-import './App.scss';
-import { Routes, Route, Link} from 'react-router-dom';
+
+
+
+
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Section />
-    </div>
-  );
+  <>
+  <Routes>
+    <Route path="/" element={<Layout />} />
+    </Routes>
+    </>
+  )
 }
 
 export default App;
